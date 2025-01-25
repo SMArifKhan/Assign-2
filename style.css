@@ -179,7 +179,7 @@ body{
 
 
 .linear{
-    padding: 0 60px;
+    padding: 60px 0;
     background-image: url(assets/bg.png) , linear-gradient(#FFFFFF , #FEA301);
 }
 .Stories-container{
@@ -287,4 +287,26 @@ body{
     font-size: 20px;
     font-weight: 500;
     text-decoration: none;
+}
+
+
+
+
+@media screen and (max-width:576px) {
+    
+    .logo-h , .nav-links , .button , .Curriculum-arrows , .First-Story{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .vision{
+        flex-direction: column-reverse;
+    }
+    .Curriculum-container{
+        flex-direction: column;
+    }
+    .footer{
+        flex-direction: column;
+    }
 }
